@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0:300;0,400;0,600;0,800;1,600&display=swap");
+body {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2d3950; }
+
+.service-section .service .icon {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#207cca+49,5fc3ff+49,2989d8+50,48baff+50&0.97+50,1+50 */
+  background: -moz-linear-gradient(left, #5fc3ff 49%, #48baff 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #5fc3ff 49%, #48baff 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5fc3ff 49%, #48baff 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3ff', endColorstr='#48baff',GradientType=1 );
+  /* IE6-9 */ }
+
+.navbar .navbar-nav .nav-item .nav-link, .btn-custom, footer ul li a {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease; }
+
+.navbar {
+  background-color: #F6F9F9;
+  padding: 25px 0; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #2d3950;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #15a4fa; }
+
+.banner-section {
+  background-image: url(../images/Strict.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .banner-section .click {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    color: #fff;
+    font-size: 25px;
+    transform: translateX(-50%); }
+  .banner-section .row {
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    justify-content: center; }
+    .banner-section .row h1 {
+      font-size: 100px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500; }
+    .banner-section .row span {
+      background: #15a4fa;
+      display: block;
+      height: 4px;
+      margin-bottom: 20px; }
+    .banner-section .row p {
+      color: #fff;
+      font-size: 25px; }
+
+.btn-custom {
+  border: 1px solid #15a4fa;
+  color: #fff; }
+  .btn-custom:hover {
+    background: #15a4fa;
+    color: #fff; }
+
+.box {
+  width: 100px;
+  height: 100px; }
+
+.ball {
+  width: 50px;
+  height: 50px; }
+
+.aboutus-section {
+  background-color: #F6F9F9;
+  text-align: center;
+  padding: 100px 0; }
+  .aboutus-section h2 {
+    font-size: 30px;
+    font-weight: 500; }
+
+.service-section .service {
+  padding: 50px 0;
+  text-align: center; }
+  .service-section .service .icon {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    margin: auto; }
+    .service-section .service .icon i {
+      text-shadow: 1px 1px 2px #2d3950; }
+  .service-section .service h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0; }
+
+footer {
+  background-color: #F6F9F9;
+  padding: 50px 0; }
+  footer ul li a {
+    margin-left: 10px;
+    background-color: #15a4fa;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    border: 1px solid #15a4fa; }
+    footer ul li a:hover {
+      background-color: transparent;
+      color: #15a4fa; }
+
+/*# sourceMappingURL=style.css.map */

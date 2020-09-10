@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0:300;0,400;0,600;0,800;1,600&display=swap');
+
+$primaryColor: #2d3950;
+$secondaryColor: #15a4fa;
+$whiteColor: #fff;
+$background-color: #F6F9F9;
+
+body{
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $primaryColor;
+}
+
+%gradient{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#207cca+49,5fc3ff+49,2989d8+50,48baff+50&0.97+50,1+50 */
+	background: -moz-linear-gradient(left,  rgba(95,195,255,1) 49%, rgba(72,186,255,1) 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(95,195,255,1) 49%,rgba(72,186,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(95,195,255,1) 49%,rgba(72,186,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3ff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+
+}
+
+%transition{
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+
+.navbar {
+	background-color: $background-color;
+	padding: 25px 0;
+    .navbar-nav{
+    	.nav-item{
+    		.nav-link{
+    			color: $primaryColor;
+    			font-weight: 700;
+    			text-transform: uppercase;
+    			@extend %transition;
+
+    			&:hover{
+    				color: $secondaryColor;
+    			}
+    		}
+    	}
+    }
+}
+
+.banner-section{
+	background-image: url(../images/Strict.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	.click{
+
+		position: absolute;
+	    bottom: 75px;
+	    left: 50%;
+	    color: #fff;
+	    font-size: 25px;
+	    transform: translateX(-50%);	
+	}
+
+	.row{
+		
+		align-items: center;
+    	height: 80vh;
+    	text-align: center;
+    	justify-content: center;
+		
+		h1{
+			font-size: 100px;
+			color: $whiteColor;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+		span{
+			background: $secondaryColor;
+			display: block;
+			height: 4px;
+			margin-bottom: 20px;
+		}
+		p{
+			color: $whiteColor;
+			font-size: 25px;
+		}
+	}
+}
+
+.btn-custom{
+	border: 1px solid $secondaryColor;
+	color: $whiteColor;
+	@extend %transition;
+
+	&:hover{
+		background: $secondaryColor;
+		color: $whiteColor;
+	}
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+}
+
+.ball{
+	width: 50px;
+	height: 50px;
+}
+
+.aboutus-section{
+	background-color: $background-color;
+	text-align: center;
+	padding: 100px 0;
+
+	h2{
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	p{
+
+	}
+}
+
+.service-section{
+	.service{
+		padding: 50px 0;
+		text-align: center;
+
+		.icon{
+			 @extend %gradient;
+			 width: 100px;
+			 height: 100px;
+			 color: $whiteColor;
+			 font-size: 50px;
+			 text-align: center;
+			 line-height: 100px;
+			margin: auto;
+			i{
+				text-shadow: 1px 1px 2px $primaryColor;
+			}
+		}
+
+		h2{
+			font-size: 22px;
+			font-weight: 600;
+			margin: 10px 0;
+		}
+
+		p{
+
+		}
+	}
+}
+
+footer{
+	background-color: $background-color;
+	padding: 50px 0;
+	p{
+
+	}
+
+	ul{
+		li{
+			a{
+				margin-left: 10px;
+				background-color: $secondaryColor;
+				color: $whiteColor;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				display: block;
+				text-align: center;
+				border: 1px solid $secondaryColor;
+				@extend %transition;
+				
+				&:hover{
+					background-color: transparent;
+					color: $secondaryColor;
+				}
+			}
+		}
+	}
+}
